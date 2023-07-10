@@ -1,11 +1,8 @@
-/*
-COLORS:
-
-Light green: #7ed56f
-Medium green: #55c57a
-Dark green: #28b485
-
-*/
+:root {
+  --light-green: #7ed56f;
+  --medium-green: #55c57a;
+  --dark-green: #28b485;
+}
 
 *,
 *::before,
@@ -19,14 +16,30 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  font-family: "Rubik", sans-serif;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
   min-height: 100vh;
+  line-height: 1.7;
+  color: #777;
   text-rendering: optimizeSpeed;
-  line-height: 1.5;
   display: flex;
   flex-direction: column;
+  padding: 3rem;
 }
 img {
   max-width: 100%;
   display: block;
+}
+.header {
+  height: 95vh;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(126, 213, 111, 0.8),
+      rgb(40, 180, 133, 0.8)
+    ),
+    url(../img/hero.jpg);
+  background-size: cover;
+  background-position: top;
+
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 }
