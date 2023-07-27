@@ -31,6 +31,9 @@ body {
   display: flex;
   flex-direction: column;
   padding: 3rem;
+  @include respond(tab-port) {
+    padding: 0;
+  }
 }
 img {
   max-width: 100%;
